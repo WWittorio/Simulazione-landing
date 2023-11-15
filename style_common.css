@@ -17,7 +17,7 @@
 
   font-family: "Darker Grotesque", sans-serif;
   font-size: 30px;
-  font-weight: 900;
+  font-weight: 500;
 }
 
 li {
@@ -98,9 +98,13 @@ nav a:hover {
   align-items: end;
   width: 100%;
 }
+/* quando schermo piccolo aggiungere margine/padding */
+
 h3 {
   padding-top: 30px;
   padding-left: 50px;
+  text-align: center;
+  color: rgb(84, 106, 83);
 }
 .jumbo h3 {
   font-size: 50px;
@@ -108,9 +112,53 @@ h3 {
 
 .scroll {
   border-radius: 20px 20px 0px 0px;
+  background-color: rgb(229, 228, 226);
 }
 /* _______________03- MILESTONE 3 - SECTIONS ________________ */
+.sections {
+  display: flex;
+  flex-direction: column;
+}
 
+.sections section {
+  display: flex;
+  flex-direction: row;
+  text-align: center;
+  justify-content: center;
+  height: 50vh;
+  background-color: rgba(177, 174, 169, 0.336);
+}
+
+.sea img,
+.tree img {
+  height: 50vh;
+  border: 5px solid rgb(84, 106, 83);
+}
+
+#section2 {
+  display: flex;
+  flex-direction: row-reverse;
+  text-align: center;
+  justify-content: center;
+  text-align: right;
+}
+
+.sectionText {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  padding: 0 5vw;
+  text-align: left;
+}
+
+.sectionText h2 {
+  font-weight: 900;
+  color: rgb(84, 106, 83);
+}
+.sectionText p {
+  color: rgb(84, 106, 83);
+}
 /* _______________04- MILESTONE 4 - SCOPRI DI PIù________________ */
 
 /* _______________05- MILESTONE 5 - FOOTER________________ */
