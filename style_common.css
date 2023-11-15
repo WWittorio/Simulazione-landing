@@ -19,6 +19,9 @@
   font-size: 30px;
   font-weight: 500;
 }
+body {
+  background-color: rgb(229, 228, 226);
+}
 
 li {
   list-style: none;
@@ -45,7 +48,7 @@ a {
 }
 
 .btn {
-  background-color: white;
+  background-color: rgb(229, 228, 226);
   padding: 5px 10px;
   text-align: center;
   border-radius: 20px;
@@ -68,7 +71,7 @@ header .wrapper {
 
 nav a {
   padding: 20px;
-  color: white;
+  color: rgb(229, 228, 226);
 }
 nav a:hover {
   color: rgb(127, 195, 126);
@@ -126,13 +129,11 @@ h3 {
   text-align: center;
   justify-content: center;
   height: 50vh;
-  background-color: rgba(177, 174, 169, 0.336);
 }
 
 .sea img,
 .tree img {
   height: 50vh;
-  border: 5px solid rgb(84, 106, 83);
 }
 
 #section2 {
@@ -160,7 +161,43 @@ h3 {
   color: rgb(84, 106, 83);
 }
 /* _______________04- MILESTONE 4 - SCOPRI DI PIù________________ */
+.mete {
+  background-image: url(assets/mareScroll.jpg);
+  min-height: 200px;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  text-align: center;
+}
 
+.mete h1 {
+  padding: 20px;
+  color: rgb(229, 228, 226);
+  text-transform: uppercase;
+  font-size: 100px;
+  font-weight: 900;
+}
+
+.scopri {
+  height: 320px;
+  background-color: rgb(229, 228, 226);
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.box {
+  width: 33%;
+  height: 380px;
+  text-align: center;
+  padding: 5%;
+}
+
+.box span {
+  font-weight: 900;
+  color: rgb(84, 106, 83);
+}
 /* _______________05- MILESTONE 5 - FOOTER________________ */
 
 /* _______________06- MILESTONE 6 - MEDIA________________ */
