@@ -1,0 +1,114 @@
+/* 
+00-RESET
+01- MILESTONE 1 -HEADER/NAV 
+02- MILESTONE 2 - JUMBO
+03- MILESTONE 3 - SECTIONS 
+04- MILESTONE 4 - SCOPRI DI PIù
+05- MILESTONE 5 - FOOTER
+06- MILESTONE 6 - MEDIA
+*/
+
+/* _______________01-RESET________________ */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+
+  font-family: "Darker Grotesque", sans-serif;
+  font-size: 30px;
+}
+
+li {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+}
+
+.flexCenter {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.flexSpaceBetween {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.wrapper {
+  max-width: 1300px;
+  margin: 0 auto;
+}
+
+/* _______________01- MILESTONE 1 -HEADER/NAV ________________ */
+header {
+  height: 80px;
+}
+
+header .wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+nav a {
+  padding: 20px;
+  color: white;
+}
+nav a:hover {
+  color: rgb(127, 195, 126);
+  font-size: 35px;
+}
+/* _______________02- MILESTONE 2 - JUMBO________________ */
+.bgImage {
+  height: 100vh;
+  background-image: url(assets/bg_image.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+/* _______________03- MILESTONE 3 - SECTIONS ________________ */
+
+/* _______________04- MILESTONE 4 - SCOPRI DI PIù________________ */
+
+/* _______________05- MILESTONE 5 - FOOTER________________ */
+
+/* _______________06- MILESTONE 6 - MEDIA________________ */
+
+/* 
+
+
+UTILI 
+.x {
+header     background-color: rgb(242, 160, 98);
+logo       background-color: rgb(235, 100, 129);
+navigator  background-color: rgb(215, 106, 80);
+background background-color: rgb(142, 171, 192);
+post title background-color: rgb(183, 206, 63);
+image      background-color: rgb(152, 171, 52);
+lorem      background-color: rgb(120, 135, 41);
+footer     background-color: rgb(183, 206, 63)
+
+HTML encoded:
+SEARCH:   &#x1F50E;&#xFE0E;
+
+
+  list-style: none;
+
+background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  MEDIA BREAKPOINT
+  xs: 0,
+  sm: 576px,
+  md: 768px,
+  lg: 992px,
+  xl: 1200px,
+  xxl: 1400px
+
+  Heart &hearts	
+} */
