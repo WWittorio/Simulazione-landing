@@ -43,7 +43,7 @@ a {
 }
 
 .wrapper {
-  max-width: 1300px;
+  max-width: 1400px;
   margin: 0 auto;
 }
 
@@ -58,7 +58,7 @@ a {
 .btn:hover {
   background-color: rgb(84, 106, 83);
 
-  color: white;
+  color: rgb(229, 228, 226);
 }
 
 /* _______________01- MILESTONE 1 -HEADER/NAV ________________ */
@@ -189,7 +189,6 @@ h3 {
 
 .box {
   width: 33%;
-  height: 380px;
   text-align: center;
   padding: 5%;
 }
@@ -199,6 +198,59 @@ h3 {
   color: rgb(84, 106, 83);
 }
 /* _______________05- MILESTONE 5 - FOOTER________________ */
+footer {
+  height: 300px;
+  background-color: rgb(84, 106, 83);
+}
+footer img {
+  width: 130px;
+  height: 130px;
+}
+
+/* DA META AGGIUNGI MARGINI/PADDING */
+
+.footerContainer {
+  height: 300px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  text-align: end;
+}
+
+footer h3 {
+  font-weight: 900;
+  color: rgb(229, 228, 226);
+  text-align: end;
+}
+
+.footerLinks {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: start;
+}
+
+.footerLinks > div {
+  padding: 0 90px;
+}
+
+footer a {
+  color: rgb(229, 228, 226);
+}
+footer a:hover {
+  color: rgb(127, 195, 126);
+  font-size: 35px;
+}
+
+.copy {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 80px;
+  margin-top: 20px;
+  background-color: rgb(84, 106, 83);
+  color: rgb(229, 228, 226);
+}
 
 /* _______________06- MILESTONE 6 - MEDIA________________ */
 
