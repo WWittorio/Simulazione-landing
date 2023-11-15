@@ -1,0 +1,62 @@
+/* 
+01-RESET
+02-HEADER/NAV
+03-MAIN
+04-FOOTER
+05-MEDIA
+06-
+
+*/
+
+/* _______________01-RESET________________ */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+
+  font-family: fantasy, sans-serif;
+  font-size: 10px;
+}
+
+/* _______________02-HEADER/NAV________________ */
+
+/* _______________03-MAIN________________ */
+
+/* _______________04-FOOTER________________ */
+
+/* _______________05-MEDIA________________ */
+
+/* 
+
+
+UTILI 
+.x {
+header     background-color: rgb(242, 160, 98);
+logo       background-color: rgb(235, 100, 129);
+navigator  background-color: rgb(215, 106, 80);
+background background-color: rgb(142, 171, 192);
+post title background-color: rgb(183, 206, 63);
+image      background-color: rgb(152, 171, 52);
+lorem      background-color: rgb(120, 135, 41);
+footer     background-color: rgb(183, 206, 63)
+
+HTML encoded:
+SEARCH:   &#x1F50E;&#xFE0E;
+
+
+  list-style: none;
+
+background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  MEDIA BREAKPOINT
+  xs: 0,
+  sm: 576px,
+  md: 768px,
+  lg: 992px,
+  xl: 1200px,
+  xxl: 1400px
+
+} */
