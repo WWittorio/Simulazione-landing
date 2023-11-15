@@ -8,7 +8,7 @@
 06- MILESTONE 6 - MEDIA
 */
 
-/* _______________01-RESET________________ */
+/* _______________00-RESET________________ */
 
 * {
   margin: 0;
@@ -17,6 +17,7 @@
 
   font-family: "Darker Grotesque", sans-serif;
   font-size: 30px;
+  font-weight: 900;
 }
 
 li {
@@ -43,15 +44,26 @@ a {
   margin: 0 auto;
 }
 
-/* _______________01- MILESTONE 1 -HEADER/NAV ________________ */
-header {
-  height: 80px;
+.btn {
+  background-color: white;
+  padding: 5px 10px;
+  text-align: center;
+  border-radius: 20px;
+  color: rgb(84, 106, 83);
 }
+
+.btn:hover {
+  background-color: rgb(84, 106, 83);
+
+  color: white;
+}
+
+/* _______________01- MILESTONE 1 -HEADER/NAV ________________ */
 
 header .wrapper {
   display: flex;
   justify-content: space-between;
-  align-items: center;
+  align-items: end;
 }
 
 nav a {
@@ -69,6 +81,33 @@ nav a:hover {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+}
+.jumboContainer {
+  height: calc(100vh - 140px);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+.jumbo {
+  padding-top: 200px;
+  padding-left: 100px;
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  align-items: end;
+  width: 100%;
+}
+h3 {
+  padding-top: 30px;
+  padding-left: 50px;
+}
+.jumbo h3 {
+  font-size: 50px;
+}
+
+.scroll {
+  border-radius: 20px 20px 0px 0px;
 }
 /* _______________03- MILESTONE 3 - SECTIONS ________________ */
 
