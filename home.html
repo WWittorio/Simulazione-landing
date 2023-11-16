@@ -15,19 +15,19 @@
   </head>
   <body>
     <main>
-      <div class="bgImage">
-        <!--__________MILESTONE 1 - HEADER _____-->
+      <div class="bgImage containBgImg">
+        <!--__________MILESTONE 1 - HEADER + NAV _____-->
         <header>
-          <div class="wrapper">
+          <div class="completeNavbar wrapper">
             <div class="logo">
               <img
                 src="assets/logo/png/logo-color-trasparent.png"
-                width="130px"
+                width="90px"
                 alt="Logo ViaggiAmo"
               />
             </div>
-            <nav>
-              <ul class="flexSpaceBetween">
+            <nav class="flexCenter">
+              <ul class="flexCenter">
                 <li><a href="home.html">Home</a></li>
                 <li><a href="about.html">About</a></li>
                 <li><a href="contacts.html">Contacts</a></li>
@@ -36,6 +36,7 @@
           </div>
         </header>
         <!--__________MILESTONE 2 - JUMBO _____-->
+
         <div class="jumboContainer">
           <div class="jumbo wrapper">
             <h3>Find your place.</h3>
@@ -45,14 +46,14 @@
               /></a>
             </div>
           </div>
-          <a class="scroll btn" href="#sections">Scorpi di più..</a>
+          <a class="scroll btn" href="#sections">Scopri di più..</a>
         </div>
       </div>
 
       <!--__________MILESTONE 3 - SECTIONS _____-->
 
-      <div class="sections wrapper">
-        <section>
+      <div id="sections" class="wrapper">
+        <section class="commonSection">
           <div class="sea">
             <img src="assets/sea.jpg" width="368px" alt="mare" />
           </div>
@@ -71,9 +72,9 @@
             </p>
           </div>
         </section>
-        <section id="section2">
+        <section class="commonSection section2">
           <div class="tree">
-            <img src="/assets/campagna.jpg" width="368px" alt="campagna" />
+            <img src="assets/campagna.jpg" width="368px" alt="campagna" />
           </div>
           <div class="sectionText">
             <h2>Scorpi l'armonia della Natura, Cultura e Sapori</h2>
@@ -90,30 +91,12 @@
       </div>
 
       <!--__________MILESTONE 4 - SCOPRI DI PIù _____-->
-      <div class="mete"><h1>Le nostre mete</h1></div>
-      <div class="flexCenter">
-        <img src="assets/bari.jpg" width="33%" alt="bari" />
-        <img src="assets/alberobello.jpg" width="33%" alt="alberobello" />
-        <img src="assets/polignano.jpg" width="33%" alt="polignano" />
+      <div class="mete containBgImg"><h1>Le nostre mete</h1></div>
+      <div class="card">
+        <h2 class="bari flexCenter containBgImg">BARI</h2>
+        <h2 class="alberobello flexCenter containBgImg">ALBEROBELLO</h2>
+        <h2 class="polignano flexCenter containBgImg">POLIGNANO</h2>
       </div>
-      <section class="scopri">
-        <p class="box">
-          <span>BARI</span> città portuale con un centro storico vibrante e
-          autentico, svela la sua storia tra chiese millenarie e mercati vivaci,
-          offrendo un'immersione nel cuore della Puglia.
-        </p>
-        <p class="box">
-          <span>ALBEROBELLO</span> patrimonio UNESCO, incanta con i suoi trulli,
-          affascinanti abitazioni dalla forma conica, creando un ambiente
-          fiabesco dove storia e architettura si fondono.
-        </p>
-        <p class="box">
-          <span>POLIGNANO A MARE</span> aggrappata a scogliere affacciate
-          sull'Adriatico, cattura con le sue grotte marine e l'atmosfera
-          romantica delle sue stradine. Un luogo dove la freschezza dei frutti
-          di mare si unisce alla magia del paesaggio.
-        </p>
-      </section>
     </main>
 
     <!--__________MILESTONE 5 - FOOTER _____-->
@@ -134,7 +117,7 @@
             </ul>
           </div>
           <div>
-            <h3>Link</h3>
+            <h3 class=".privacy">Link</h3>
             <ul>
               <li><a href="">Cookie Policy</a></li>
               <li><a href="">Privacy Policy</a></li>

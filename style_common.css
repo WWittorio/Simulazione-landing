@@ -1,5 +1,5 @@
 /* 
-00-RESET
+00- RESET + UTILITIES - 00.1- ANIMAZIONI
 01- MILESTONE 1 -HEADER/NAV 
 02- MILESTONE 2 - JUMBO
 03- MILESTONE 3 - SECTIONS 
@@ -8,7 +8,7 @@
 06- MILESTONE 6 - MEDIA
 */
 
-/* _______________00-RESET________________ */
+/* _______________00-RESET + UTILITIES________________ */
 
 * {
   margin: 0;
@@ -18,6 +18,7 @@
   font-family: "Darker Grotesque", sans-serif;
   font-size: 30px;
   font-weight: 500;
+  scroll-behavior: smooth;
 }
 body {
   background-color: rgb(229, 228, 226);
@@ -61,16 +62,55 @@ a {
   color: rgb(229, 228, 226);
 }
 
+.containBgImg {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+/* _______________00.1- ANIMAZIONI  ________________ */
+@keyframes animazioneIngrandisci {
+  0% {
+    scale: (1);
+  }
+  50% {
+    scale: (1.5);
+    font-size: 35px;
+  }
+  100% {
+    scale: (1);
+    font-size: 30px;
+  }
+}
+
+@keyframes animazioneCardOn {
+  0% {
+    scale: (1);
+  }
+  50% {
+    scale: (1.5);
+    font-size: 50px;
+    opacity: 1;
+  }
+  100% {
+    scale: (1);
+  }
+}
+
 /* _______________01- MILESTONE 1 -HEADER/NAV ________________ */
 
 header .wrapper {
   display: flex;
   justify-content: space-between;
-  align-items: end;
+  align-items: start;
+}
+
+.completeNavbar {
+  height: 95px;
 }
 
 nav a {
-  padding: 20px;
+  padding: 0 20px;
   color: rgb(229, 228, 226);
 }
 nav a:hover {
@@ -81,12 +121,9 @@ nav a:hover {
 .bgImage {
   height: 100vh;
   background-image: url(assets/bg_image.jpg);
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
 }
 .jumboContainer {
-  height: calc(100vh - 140px);
+  height: calc(100vh - 95px);
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -94,7 +131,7 @@ nav a:hover {
 }
 .jumbo {
   padding-top: 200px;
-  padding-left: 100px;
+  padding-left: 105px;
   display: flex;
   flex-direction: column;
   justify-content: end;
@@ -116,6 +153,7 @@ h3 {
 .scroll {
   border-radius: 20px 20px 0px 0px;
   background-color: rgb(229, 228, 226);
+  animation: animazioneIngrandisci 3s ease-in-out infinite;
 }
 /* _______________03- MILESTONE 3 - SECTIONS ________________ */
 .sections {
@@ -123,7 +161,7 @@ h3 {
   flex-direction: column;
 }
 
-.sections section {
+.commonSection {
   display: flex;
   flex-direction: row;
   text-align: center;
@@ -136,7 +174,7 @@ h3 {
   height: 50vh;
 }
 
-#section2 {
+.section2 {
   display: flex;
   flex-direction: row-reverse;
   text-align: center;
@@ -165,10 +203,9 @@ h3 {
   background-image: url(assets/mareScroll.jpg);
   min-height: 200px;
   background-attachment: fixed;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
   text-align: center;
+  margin-top: 100px;
+  border-top: 3px solid rgb(84, 106, 83);
 }
 
 .mete h1 {
@@ -179,24 +216,44 @@ h3 {
   font-weight: 900;
 }
 
-.scopri {
-  height: 320px;
-  background-color: rgb(229, 228, 226);
+.card {
+  height: 400px;
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: center;
-}
-
-.box {
-  width: 33%;
   text-align: center;
   padding: 5%;
 }
 
-.box span {
+.card h2 {
+  width: 33%;
+  height: 300px;
+  font-size: 40px;
   font-weight: 900;
-  color: rgb(84, 106, 83);
+  color: rgb(252, 252, 252);
 }
+
+.bari:hover,
+.alberobello:hover,
+.polignano:hover {
+  opacity: 1;
+  animation: animazioneCardOn 3s ease-in-out infinite;
+}
+
+.bari {
+  background-image: url(assets/bari.jpg);
+  opacity: 0.5;
+}
+
+.alberobello {
+  background-image: url(assets/alberobello.jpg);
+  opacity: 0.5;
+}
+.polignano {
+  background-image: url(assets/polignano.jpg);
+  opacity: 0.5;
+}
+
 /* _______________05- MILESTONE 5 - FOOTER________________ */
 footer {
   height: 300px;
@@ -252,39 +309,142 @@ footer a:hover {
   color: rgb(229, 228, 226);
 }
 
-/* _______________06- MILESTONE 6 - MEDIA________________ */
+/* _______________06- MILESTONE 6 - MEDIA________________  
+MOBILE - Fino a 430px 
 
-/* 
+TABLET - Fino a 1024px
 
+DESKTOP - Da 1025px in poi*/
 
-UTILI 
-.x {
-header     background-color: rgb(242, 160, 98);
-logo       background-color: rgb(235, 100, 129);
-navigator  background-color: rgb(215, 106, 80);
-background background-color: rgb(142, 171, 192);
-post title background-color: rgb(183, 206, 63);
-image      background-color: rgb(152, 171, 52);
-lorem      background-color: rgb(120, 135, 41);
-footer     background-color: rgb(183, 206, 63)
+@media only screen and (max-width: 400px) {
+  * {
+    font-size: 15px;
+  }
 
-HTML encoded:
-SEARCH:   &#x1F50E;&#xFE0E;
+  .wrapper {
+    padding: 10px;
+  }
 
+  /* _______________03- MILESTONE 3 - SECTIONS ________________ */
+  .sections {
+    display: flex;
+    flex-direction: column;
+  }
 
-  list-style: none;
+  .commonSection {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    height: 700px;
+  }
 
-background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
+  .sectionText h2 {
+    font-size: 25px;
+  }
+  .sectionText p {
+    font-size: 16px;
+  }
 
-  MEDIA BREAKPOINT
-  xs: 0,
+  /*
+  .section2 {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    text-align: right;
+  }
+
+  .sectionText {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    padding: 0 5vw;
+    text-align: left;
+  }
+
+  */
+
+  /* _______________04- MILESTONE 4 - SCOPRI DI PIù________________ */
+
+  .card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .card {
+    height: 800px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    padding: 5%;
+  }
+
+  .card h2 {
+    width: 100%;
+    font-size: 40px;
+    font-weight: 900;
+    color: rgb(252, 252, 252);
+  }
+}
+
+/* _______________05- MILESTONE 5 - FOOTER________________ */
+footer {
+  height: 300px;
+  background-color: rgb(84, 106, 83);
+}
+footer img {
+  width: 130px;
+  height: 130px;
+}
+
+/* DA META AGGIUNGI MARGINI/PADDING */
+
+.footerContainer {
+  height: 300px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: end;
+}
+
+footer h3 {
+  font-weight: 900;
+  color: rgb(229, 228, 226);
+  text-align: start;
+}
+
+.privacy h3 {
+  text-align: end;
+}
+
+.footerLinks {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: start;
+}
+
+.footerLinks > div {
+  padding: 0 25%;
+}
+
+/*  */
+
+@media only screen and (max-width: 1024px) {
+  * {
+    font-size: 15px;
+  }
+}
+
+/* UTILI .x { header background-color: rgb(242, 160, 98) ; logo background-color: rgb(235, 100, 129) ; navigator background-color: rgb(215, 106, 80) ; background background-color: rgb(142, 171, 192) ; post title background-color: rgb(183, 206, 63) ; image background-color: rgb(152, 171, 52) ; lorem background-color: rgb(120, 135, 41) ; footer background-color: rgb(183, 206, 63) HTML encoded: SEARCH: &#x1F50E;&#xFE0E; list-style: none; background-position: center; background-repeat: no-repeat; background-size: cover; MEDIA BREAKPOINT xs: 0,
   sm: 576px,
   md: 768px,
   lg: 992px,
   xl: 1200px,
-  xxl: 1400px
-
-  Heart &hearts	
-} */
+  xxl: 1400px Heart &hearts } */
