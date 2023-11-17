@@ -79,7 +79,6 @@ a {
   }
   100% {
     scale: (1);
-    font-size: 30px;
   }
 }
 
@@ -151,9 +150,10 @@ h3 {
 }
 
 .scroll {
+  height: 50px;
   border-radius: 20px 20px 0px 0px;
   background-color: rgb(229, 228, 226);
-  animation: animazioneIngrandisci 3s ease-in-out infinite;
+  animation: animazioneIngrandisci 7s ease-in-out infinite;
 }
 /* _______________03- MILESTONE 3 - SECTIONS ________________ */
 .sections {
@@ -314,7 +314,41 @@ MOBILE - Fino a 430px
 
 TABLET - Fino a 1024px
 
-DESKTOP - Da 1025px in poi*/
+DESKTOP - Da 1025px in poi
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+*/
 
 @media only screen and (max-width: 400px) {
   * {
@@ -325,6 +359,18 @@ DESKTOP - Da 1025px in poi*/
     padding: 10px;
   }
 
+  /* _______________02- MILESTONE 2 - JUMBO________________ */
+
+  header nav ul li {
+    display: none;
+  }
+
+  nav svg {
+    width: 40px;
+    height: 40px;
+    fill: white;
+  }
+
   /* _______________03- MILESTONE 3 - SECTIONS ________________ */
   .sections {
     display: flex;
@@ -333,8 +379,8 @@ DESKTOP - Da 1025px in poi*/
 
   .commonSection {
     display: flex;
-    flex-direction: column;
-    text-align: center;
+    flex-direction: column-reverse;
+
     justify-content: center;
     height: 700px;
   }
@@ -346,25 +392,10 @@ DESKTOP - Da 1025px in poi*/
     font-size: 16px;
   }
 
-  /*
-  .section2 {
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-    justify-content: center;
-    text-align: right;
-  }
-
   .sectionText {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+    padding: 20px 10px;
     text-align: center;
-    padding: 0 5vw;
-    text-align: left;
   }
-
-  */
 
   /* _______________04- MILESTONE 4 - SCOPRI DI PIù________________ */
 
@@ -393,45 +424,31 @@ DESKTOP - Da 1025px in poi*/
 }
 
 /* _______________05- MILESTONE 5 - FOOTER________________ */
-footer {
-  height: 300px;
-  background-color: rgb(84, 106, 83);
-}
-footer img {
-  width: 130px;
-  height: 130px;
-}
-
-/* DA META AGGIUNGI MARGINI/PADDING */
 
 .footerContainer {
-  height: 300px;
-  display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center;
-  text-align: end;
 }
 
 footer h3 {
   font-weight: 900;
   color: rgb(229, 228, 226);
-  text-align: start;
-}
-
-.privacy h3 {
-  text-align: end;
 }
 
 .footerLinks {
-  display: flex;
-  flex-direction: row;
   justify-content: center;
-  align-items: start;
 }
 
 .footerLinks > div {
-  padding: 0 25%;
+  padding: 0 15%;
+}
+
+#privacy {
+  text-align: start;
+}
+#privacy2 {
+  padding-left: 0px;
+  text-align: start;
 }
 
 /*  */
@@ -447,4 +464,7 @@ footer h3 {
   md: 768px,
   lg: 992px,
   xl: 1200px,
-  xxl: 1400px Heart &hearts } */
+  xxl: 1400px Heart &hearts } 
+  
+  
+  https://picsum.photos/200/300*/
