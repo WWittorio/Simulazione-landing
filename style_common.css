@@ -116,6 +116,10 @@ nav a:hover {
   color: rgb(127, 195, 126);
   font-size: 35px;
 }
+
+.bars {
+  display: none;
+}
 /* _______________02- MILESTONE 2 - JUMBO________________ */
 .bgImage {
   height: 100vh;
@@ -269,6 +273,7 @@ footer img {
 .footerContainer {
   height: 300px;
   display: flex;
+
   justify-content: space-between;
   align-items: center;
   text-align: end;
@@ -321,33 +326,6 @@ DESKTOP - Da 1025px in poi
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 */
 
 @media only screen and (max-width: 400px) {
@@ -369,6 +347,10 @@ DESKTOP - Da 1025px in poi
     width: 40px;
     height: 40px;
     fill: white;
+  }
+
+  .bars {
+    display: block;
   }
 
   /* _______________03- MILESTONE 3 - SECTIONS ________________ */
@@ -421,36 +403,36 @@ DESKTOP - Da 1025px in poi
     font-weight: 900;
     color: rgb(252, 252, 252);
   }
-}
 
-/* _______________05- MILESTONE 5 - FOOTER________________ */
+  /* _______________05- MILESTONE 5 - FOOTER________________ */
 
-.footerContainer {
-  flex-direction: column;
-  justify-content: center;
-}
+  .footerContainer {
+    flex-direction: column;
+    justify-content: center;
+  }
 
-footer h3 {
-  font-weight: 900;
-  color: rgb(229, 228, 226);
-}
+  footer h3 {
+    font-weight: 900;
+    color: rgb(229, 228, 226);
+  }
 
-.footerLinks {
-  justify-content: center;
-}
+  .footerLinks {
+    width: 100vw;
+    justify-content: center;
+  }
 
-.footerLinks > div {
-  padding: 0 15%;
-}
+  .footerLinks > div {
+    padding: 0 15%;
+  }
 
-#privacy {
-  text-align: start;
+  #privacy {
+    text-align: start;
+  }
+  #privacy2 {
+    padding-left: 0px;
+    text-align: start;
+  }
 }
-#privacy2 {
-  padding-left: 0px;
-  text-align: start;
-}
-
 /*  */
 
 @media only screen and (max-width: 1024px) {
