@@ -1,0 +1,129 @@
+/* 
+01-RESET
+02-HEADER/NAV
+03-MAIN
+04-FOOTER
+05-MEDIA
+06-
+
+*/
+
+/* _______________01-RESET________________ */
+
+/* _______________02-HEADER/NAV________________ */
+
+.bgImage {
+  background-image: none;
+}
+header {
+  background-color: rgb(84, 106, 83);
+  height: 95px;
+}
+
+header .wrapper {
+  align-items: center;
+}
+
+header .logo {
+  padding-top: 10px;
+}
+
+/* _______________03-MAIN________________ */
+.jumboContainer {
+  display: block;
+}
+
+.jumbo h1 {
+  margin: 0 auto;
+  padding: 30px 0px;
+  font-size: 50px;
+  color: rgb(84, 106, 83);
+  font-weight: 900;
+  text-transform: uppercase;
+  height: calc(10vh -95px);
+}
+
+.jumbo {
+  padding: 0px;
+  align-items: center;
+  justify-content: start;
+}
+
+.commonSection {
+  height: calc(90vh -95px);
+}
+
+.jumbo h3 {
+  padding: 0px;
+  font-size: x-large;
+}
+label {
+  text-align: left;
+  color: rgb(84, 106, 83);
+  margin-top: 20px;
+}
+
+.sectionText {
+  height: 60vh;
+}
+#messAGE .checkRadio label {
+  font-size: large;
+  margin-top: 0px;
+}
+.mete {
+  height: 60vh;
+  margin-top: 0px;
+}
+.mete h1 {
+  padding: 30px;
+  color: white;
+  font-size: xx-large;
+  height: 60vh;
+}
+
+.btn {
+  cursor: pointer;
+  background-color: rgb(84, 106, 83);
+  color: rgb(229, 228, 226);
+}
+
+.btn:hover {
+  background-color: rgb(145, 160, 105);
+}
+/* _______________04-FOOTER________________ */
+
+/* _______________05-MEDIA________________ */
+
+/* 
+
+
+UTILI 
+.x {
+header     background-color: rgb(242, 160, 98);
+logo       background-color: rgb(235, 100, 129);
+navigator  background-color: rgb(215, 106, 80);
+background background-color: rgb(142, 171, 192);
+post title background-color: rgb(183, 206, 63);
+image      background-color: rgb(152, 171, 52);
+lorem      background-color: rgb(120, 135, 41);
+footer     background-color: rgb(183, 206, 63)
+
+HTML encoded:
+SEARCH:   &#x1F50E;&#xFE0E;
+
+
+  list-style: none;
+
+background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  MEDIA BREAKPOINT
+  xs: 0,
+  sm: 576px,
+  md: 768px,
+  lg: 992px,
+  xl: 1200px,
+  xxl: 1400px
+
+} */

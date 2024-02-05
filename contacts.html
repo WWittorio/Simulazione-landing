@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ViaggiAmo</title>
+    <link rel="stylesheet" href="style_common.css" />
+    <link rel="stylesheet" href="style_contacts.css" />
+    <!-- font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Darker+Grotesque:wght@300;400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <main>
+      <!--__________MILESTONE 1 - HEADER + NAV _____-->
+      <header>
+        <div class="completeNavbar wrapper">
+          <div class="logo">
+            <img
+              src="assets/logo/png/logo-color-trasparent.png"
+              width="90px"
+              alt="Logo ViaggiAmo"
+            />
+          </div>
+          <nav>
+            <svg
+              class="bars"
+              xmlns="http://www.w3.org/2000/svg"
+              height="1em"
+              viewBox="0 0 448 512"
+            >
+              <path
+                d="M0 96C0 78.3 14.3 64 32 64H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32C14.3 128 0 113.7 0 96zM0 256c0-17.7 14.3-32 32-32H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32c-17.7 0-32-14.3-32-32zM448 416c0 17.7-14.3 32-32 32H32c-17.7 0-32-14.3-32-32s14.3-32 32-32H416c17.7 0 32 14.3 32 32z"
+              />
+            </svg>
+            <ul class="flexCenter">
+              <li><a href="home.html">Home</a></li>
+              <li><a href="about.html">About</a></li>
+              <li><a href="contacts.html">Contacts</a></li>
+            </ul>
+          </nav>
+        </div>
+      </header>
+      <!--__________MILESTONE 2 - JUMBO _____-->
+
+      <div class="jumboContainer">
+        <div class="jumbo wrapper">
+          <h1>Contattaci e parti subito!</h1>
+
+          <section class="commonSection section2">
+            <div class="mete containBgImg"><h1>Viaggia con noi</h1></div>
+            <form class="sectionText">
+              <label for="fname">Nome</label>
+              <input type="text" id="fname" name="fname" />
+              <label for="lanme">Cognome</label>
+              <input type="text" id="lanme" name="lanme" />
+              <label for="email">Email</label>
+              <input type="email" id="email" name="email" />
+              <label for="message">Messaggio</label>
+              <input type="text" id="message" name="message" />
+              <div class="checkRadio">
+                <input type="radio" id="privacyRadio" name="privacyRadio" />
+                <label for="privacyRadio">Accetto la privacy</label>
+              </div>
+              <div class="checkRadio">
+                <input type="checkbox" id="newsletter" name="newsletter" />
+                <label for="newsletter">Iscriviti alla newsletter</label>
+              </div>
+              <button class="btn">INVIA</button>
+            </form>
+          </section>
+        </div>
+      </div>
+    </main>
+    <!--__________MILESTONE 5 - FOOTER _____-->
+
+    <footer>
+      <div class="footerContainer wrapper">
+        <img
+          src="assets/logo/png/logo-color-trasparent.png"
+          alt="Logo ViaggiAmo"
+        />
+        <div class="footerLinks">
+          <div>
+            <h3>Pages</h3>
+            <ul>
+              <li><a href="home.html">Home</a></li>
+              <li><a href="about.html">About</a></li>
+              <li><a href="contacts.html">Contacts</a></li>
+            </ul>
+          </div>
+          <div id="privacy">
+            <h3 id="privacy2">Link</h3>
+            <ul>
+              <li><a href="">Cookie Policy</a></li>
+              <li><a href="">Privacy Policy</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="copy">Copy @2023 Vittorio Genga</div>
+    </footer>
+  </body>
+</html>
